@@ -1,0 +1,308 @@
+<!doctype html>
+<html> 
+ <head> 
+  <meta charset="utf-8"> 
+  <meta http-eqiv="X-UA-Compatible" content="IE-edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Fortune's World</title> 
+  <link rel="stylesheet" href="Favour.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,100&amp;display=swap" rel="stylesheet"> 
+ <style type="text/css" id="dcoder_stylesheet">body{
+    margin:0px;
+    padding:0px;
+    font-family:"montserrat";
+    background-image:url(b.jpg);
+    background-size:cover;
+}
+*{
+    box-sizing:border-box;
+}
+ul{
+    list-style:none;
+}
+a{
+    text-decoration:none;    
+}
+button{
+    outline:none;
+    border:none;
+}
+input{
+    outline:none;
+    border:none;
+}
+.main{
+    width:100%;
+    height:768px;
+    position:relative;
+}
+nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    padding:0 30px;
+    background-color:#10001d;
+    box-shadow:2px 2px 20px rgba(0,0,0,0.514);
+    z-index:1;
+    width:100%;
+    position:fixed;
+    left:0px;
+    top:0px;
+}
+nav ul{
+    display:flex;
+    margin:0;
+    padding:0;
+}
+nav ul li a{
+    height:40px;
+    line-height:43px;
+    margin:3px;
+    padding:10px 7px;
+    display:flex;
+    font-size:0.3rem;
+    text-transformation:uppercase;
+    font-weight:400;
+    color:#30e3b5;
+    letter-spacing:1px;
+    transition:0.3s ease-in-out;
+}
+nav ul li a:hover{
+    border-radius:2px;
+    background-color:#5cfdb2;
+    color:#10003d;
+    box-shadow:2px 2px 20px rgba(0,0,0,0.514);
+}
+.active{
+    background-color:#5cfdb2;
+    color:#10003d;
+    box-shadow:2px 2px 20px rgba(0,0,0,0.514);
+}
+nav .menu-btn{
+    display:none;
+}
+/* Header-content*/
+.header-content{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    position:absolute;
+    left:50%;
+    top:50;
+    transform:translate(-50, -50%);
+    width:90%;
+}
+.header-img{
+    width:500px;
+    height:400px;
+    margin:20px;
+}
+.header-img img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    object-position:center;
+}
+.header-text{
+    width:500px;
+    margin:20px;
+}
+.header-text h1{
+    font-size:3.5rem;
+    line-height:55px;
+    color:#ffffff;
+    letter-spacing:1px;
+    font-weight:700;
+    margin:0px;
+}
+.header-text p{
+    font-size:1rem;
+    color:rgb(235, 235, 235);
+}
+.header-text span{
+    color:#5cfdb2;
+    text-decoration:underline;
+}/* Header button */
+.header-btn{
+    width:120px;
+    height:40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:#30e3b5;
+    color:#10003d;
+    box-shadow:2px 2px 20px rgba(0,0,0,0.514);
+    text-transform:0.3s ease-in-out;
+    margin:20px;
+    border-radius:3px;
+    }
+    .header-btn:hover{
+        background-color:#5cfdb2;
+    }
+ /* contact */
+   .contact{
+     display:flex;
+    align-items:center;
+    justify-content:space-around;
+    flex-direction:column;
+    margin:10px 0px;
+    margin-top:80px;
+    padding:30px 0px;
+ }
+ .contact h3{
+     font-size:2.5rem;
+     margin:20px;
+     color:#fff;
+     margin-left:40%;
+ }
+  .contact-input{
+     width:400px;
+     height:50px;
+     background-color:#fff;
+     display:flex;
+     justify-content:center;
+     border-radius:50px;
+     box-shadow:2px 2px 20px rgba(27, 1, 141, 0.507);
+     margin-left:40%;
+ }
+ .contact-input input{
+    width:30%;
+    background-color:transparent;
+    border:none;
+    outline:none;
+    text-align:center;
+    color:#10003d;
+ }
+ .contact-input a{
+     width:200px;
+     height:15px:
+     background-color:#5cfdb2;
+     color:#10003d;
+     display:flex;
+     font-size:0.9rem;
+     align-items:center;
+     justify-content:center;
+     margin:auto 10px;
+     border-radius:20px;
+     font-weight:500;
+ }
+ /* media */
+ 
+ @media (max-width:1920px){
+     nav{
+         justify-content:space-between;
+         height:65px;
+     }
+     .menu{
+         display:none;
+         position:absolute;
+         top:65px;
+         left:0px;
+         background-color:#10003d;
+         border-bottom:4px solid #5cfdb2;
+         width:100%;
+     }
+     .menu li{
+         width:100%;
+     }
+     nav .menu li a{
+         width:100%;
+         height:40px;
+         justify-content:center;
+         align-items:center;
+         margin:0px;
+         padding:25px;
+         border:1px solid #10003d;
+     }
+     nav .menu-icon{
+         cursor:pointer;
+         float:right;
+         padding:28px 20px;
+         position:relative;
+         user-select:none;
+     }
+     nav .menu-icon .nav-icon{
+         background-color:#fff;
+         display:block;
+         height:2px;
+         position:relative;
+         transition:background 0.2s ease-out;
+         width:18px;
+     }
+     nav .menu-icon .nav-icon:before,
+     nav .menu-icon .nav-icon:after{
+         background:#fff;
+         content:"";
+         display:block;
+         height:100%;
+         position:absolute;
+         transition:all ease-out 0.3s;
+         width:100%;
+     }
+       nav .menu-icon .nav-icon:before{
+           top:5px;
+       }
+       nav .menu-icon .nav-icon:after{
+           top:5px;
+       }
+       nav .menu-btn:checked ~ .menu-icon .nav-icon{
+           background:transparent;
+       }
+       nav .menu-btn:checked ~ .menu-icon .nav-icon:before{
+           transition:rotate(-45deg);
+           top:0;
+       }
+       nav .menu-btn:checked ~ .menu-icon .nav-icon:after{
+           transform:rotate(70deg);
+           top:0;
+       }nav .menu-btn{
+           display:none;
+       }
+       nav .menu-btn:checked ~ .menu{
+           display:block;
+       }
+       .header-img{
+           display:none;
+       }
+       .header-text{
+           text-align:center;
+       }
+       .header-text a{
+           margin-left:100px;
+       }
+ }</style></head> 
+ <body> 
+  <section class="main"> 
+   <nav> <a href="#" class="logo"> FORTUNE </a> 
+    <input class="menu-btn" type="checkbox" id="menu-btn"> <label class="menu-icon" for="menu-btn"> <span class="nav-icon"></span> </label> 
+    <ul class="menu"> 
+     <li><a href="home.html" class="active">Home</a></li> 
+     <li><a href="entertain.html">Entertainment</a></li> 
+     <li><a href="news.html">News</a></li> 
+     <li><a href="#">Gossip</a></li> 
+     <li><a href="#">Fashion</a></li> 
+     <li><a href="#">hair</a></li> 
+     <li><a href="#">lifestyle</a></li> 
+    </ul> 
+   </nav> 
+   <div class="header-content"> 
+    <div class="header-text"> 
+     <br> 
+     <br> 
+     <br> 
+     <h1>There is no friend as <span>loyal</span>as a<span>good web</span></h1> 
+     <p>The author is none other than fortune osagiator, amd she love to write a lot of books that suites her interest</p> <a href="#" class="header-btn">READ ON</a> 
+    </div> 
+    <div class="header-img"> 
+     <img src="student.png"> 
+    </div> 
+   </div> 
+  </section> 
+  <section class="contact"> 
+   <h3>subscribe</h3> 
+   <div class="contact-input"> 
+    <input type="email" placeholder="osagiatorfortune@gmail.com"> <a href="#">continue</a> 
+   </div> 
+  </section> 
+ 
+</body></html>
